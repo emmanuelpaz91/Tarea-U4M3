@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+<p>Para {{signo}}, solamente pueden venir cosas buenas. Si vas a tomar mate, no le pongas burrito porque te hace mal. Una cosa más, persona de {{signo}}: Un alumno se atrasó con su cursado, pero se viene recuperando. <a href="/salir">Salir</a> </p>
+{{/if}}
+
+{{#unless conocido}}
+<p>¿De qué singo sos?</p>
+<form action="/ingresar" method="post">
+<input type="text" name="signo"><button>Ingresar</button>
+</form>
+{{/unless}}
